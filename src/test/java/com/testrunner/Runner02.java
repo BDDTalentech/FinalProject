@@ -5,13 +5,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions
 (
-		//features= "Features/completed features", //feature folder
+		//features= "Features/TestNG", //feature folder
 		//glue = "com.stepdef" //stepdef package
 		
 		
 		)
 
-public class Runner01 extends AbstractTestNGCucumberTests {
+public class Runner02 extends AbstractTestNGCucumberTests {
 	
 
 }
