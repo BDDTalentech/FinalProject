@@ -25,11 +25,20 @@ public class HomepageObjects {
 	
 	public static String OrderConfirmationURL= "https://demo.oscommerce.com/checkout_confirmation.php";
 	
+	public static String ProductPageURL = "https://demo.oscommerce.com/product_info.php?products_id=28&osCsid=b21ipbachl4rdj5k2vfu342r45";
+	public static String AddToCartURL = "https://demo.oscommerce.com/shopping_cart.php";
 	
+	public static String ReviewURL = "https://demo.oscommerce.com/product_reviews.php?products_id=28";
 	
+	public static String CartoonsURL = "https://demo.oscommerce.com/index.php?cPath=3_13";
 	
+	public static String EmailAddressURL = "https://demo.oscommerce.com/password_forgotten.php";
 	
+	public static String PriceFrom = "100"; 
+	public static String AdvancedSearchURL = "https://demo.oscommerce.com/advanced_search.php";
 	
+
+
 	@FindBy
 	(id= "tdb3")
 	public static	WebElement myAccountButton;
@@ -83,6 +92,41 @@ public class HomepageObjects {
 	(xpath = "//*[@id=\"bodyContent\"]/form/div/div[4]/table[3]/tbody/tr/td[2]/input")
 	public static WebElement CreditCard;
 	
+	@FindBy 
+	(xpath = "//*[@id=\"bodyContent\"]/div/div[2]/table/tbody/tr[1]/td[1]/a[1]/img")
+	public static WebElement SamsungGalaxyTab;
+	
+	@FindBy
+	(xpath = "//*[@id=\"tdb4\"]/span[1]")
+	public static WebElement AddToCart2;
+	
+	@FindBy
+	(xpath = "//*[@id=\"tdb5\"]/span[2]")
+	public static WebElement Review;
+	
+	@FindBy
+	(xpath = "//*[@id=\"columnLeft\"]/div[1]/div[2]/a[3]")
+	public static WebElement DvdMovies;
+	
+	@FindBy
+	(xpath = "//*[@id=\"columnLeft\"]/div[1]/div[2]/a[5]")
+	public static WebElement Cartoons;
+	
+	@FindBy 
+	(xpath = "//*[@id=\"loginModules\"]/div[1]/div/form/p[1]/a")
+	public static WebElement ForgottenPassword;
+	
+	@FindBy
+	(xpath = "//*[@id=\"columnLeft\"]/div[3]/div[2]/form/a/strong")
+	public static WebElement AdvancedSearch;
+	
+	@FindBy
+	(xpath = "//*[@id=\"bodyContent\"]/form/div/div/table/tbody/tr[4]/td[2]/input")
+	public static WebElement PriceFromTextBox;
+	
+	@FindBy
+	(xpath = "//*[@id=\"tdb4\"]/span[2]")
+	public static WebElement SearchButton;
 	
 	
 }
