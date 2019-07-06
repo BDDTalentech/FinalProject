@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,7 +17,7 @@ import cucumber.api.java.en.When;
 
 public class Homepagesteps {
 
-	static WebDriver driver = Homepagesteps.driver; 
+	static WebDriver driver; 
 	static WebDriverWait wait;
 
 	@Given("^I open chrome$")
@@ -29,6 +30,19 @@ public class Homepagesteps {
 		PageFactory.initElements(driver, HomepageObjects.class);
 		
 	}
+	
+	@Given("^I open firefox$")
+	public void i_open_firefox() throws Throwable {
+		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 7);
+		PageFactory.initElements(driver, HomepageObjects.class);
+		
+	}
+	
+	
 	
 @When("^I navigate demo\\.oscommerce\\.com$")
 	public void i_navigate_demo_oscommerce_com() throws Throwable {
