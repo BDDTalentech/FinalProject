@@ -34,6 +34,19 @@ public void my_password() throws Throwable {
 
 }
 
+
+@When("^I enter incorrect \"([^\"]*)\"$")
+public void i_enter_incorrect(String arg1) throws Throwable {
+	HomepageObjects.emailTextBox.sendKeys(arg1);
+}
+
+@When("^incorrect \"([^\"]*)\"$")
+public void incorrect(String arg1) throws Throwable {
+	HomepageObjects.passwordTextbox.sendKeys(arg1);
+	
+}
+
+
 @When("^click th sign in buton$")
 public void click_th_sign_in_buton() throws Throwable {
 	HomepageObjects.signInButton.click();
