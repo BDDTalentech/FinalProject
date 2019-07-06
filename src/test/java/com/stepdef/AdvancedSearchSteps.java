@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 
 	public class AdvancedSearchSteps {
 	
-		static WebDriver driver;
+		static WebDriver driver = Homepagesteps.driver; 
 	
 
 	@When("^I click on advanced search$")

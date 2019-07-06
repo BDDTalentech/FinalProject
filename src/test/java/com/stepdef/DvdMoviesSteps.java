@@ -15,7 +15,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class DvdMoviesSteps {
-	static WebDriver driver = Homepagesteps.driver;
+	static WebDriver driver = Homepagesteps.driver; 
 	static WebDriverWait wait;
 	
 	

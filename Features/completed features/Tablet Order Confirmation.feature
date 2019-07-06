@@ -3,9 +3,9 @@ Feature: User can add an item to cart
 Scenario: User can successfully add Samsung Galaxy Tab to their cart
 
 Given I open chrome    
-When I navigatee demo.oscommerce.com
+When I navigate demo.oscommerce.com
 And I click on my account
-Then I should be taken to the login page
+#Then I should be taken to the login page
 When I enter my email address
 And my password
 And click th sign in buton

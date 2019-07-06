@@ -16,7 +16,7 @@ import cucumber.api.java.en.When;
 
 public class Homepagesteps {
 
-	static WebDriver driver;
+	static WebDriver driver = Homepagesteps.driver; 
 	static WebDriverWait wait;
 
 	@Given("^I open chrome$")
@@ -30,16 +30,16 @@ public class Homepagesteps {
 		
 	}
 	
-//	@When("^I navigate demo\\.oscommerce\\.com$")
-//	public void i_navigate_demo_oscommerce_com() throws Throwable {
-//		driver.get("https://demo.oscommerce.com/index.php");
-//	
-		//}
+@When("^I navigate demo\\.oscommerce\\.com$")
+	public void i_navigate_demo_oscommerce_com() throws Throwable {
+		driver.get("https://demo.oscommerce.com/index.php");
 
-@When("^I navigatee demo\\.oscommerce\\.com$")
-public void i_navigate_demo_oscommerce_com() throws Throwable {
-	driver.get(HomepageObjects.homepageURL);
-}
+		}
+
+//@When("^I navigatee demo\\.oscommerce\\.com$")
+//public void i_navigate_demo_oscommerce_com() throws Throwable {
+	//driver.get(HomepageObjects.homepageURL);
+//}
 
 	@Then("^I should be taken to the demo\\.oscomemrce homepage$")
 	public void i_should_be_taken_to_the_demo_oscomemrce_homepage() throws Throwable {

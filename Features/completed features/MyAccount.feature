@@ -2,9 +2,9 @@ Feature: User can sign in to view their Account information.
 
 Scenario: User sccessfully signs in to view their account
 Given I open chrome    
-When I navigatee demo.oscommerce.com
+When I navigate demo.oscommerce.com
 And I click on my account
-Then I should be taken to the login page
+#Then I should be taken to the login page
 When I enter my email address
 And my password
 And click th sign in buton

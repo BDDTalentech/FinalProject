@@ -10,8 +10,7 @@ import cucumber.api.java.en.When;
 
 public class ForgottenPasswordSteps {
 		
-		static WebDriver driver;
-		
+	static WebDriver driver = Homepagesteps.driver; 		
 
 		@When("^I click on Password Forgotten$")
 		public void i_click_on_Password_Forgotten() throws Throwable {

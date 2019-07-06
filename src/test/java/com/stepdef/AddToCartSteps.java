@@ -9,8 +9,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class AddToCartSteps {
-	static WebDriver driver;
 	static WebDriver wait;
+	static WebDriver driver = Homepagesteps.driver; 
 	
 	
 	@When("^I click on samsung galaxy tab$")
