@@ -5,8 +5,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions
 (
-		//features= "Features/TestNG", //feature folder
-		//glue = "com.stepdef" //stepdef package
+		features= "Features/TestNG", //feature folder
+		glue = "com.stepdef" //stepdef package
 		
 		
 		)

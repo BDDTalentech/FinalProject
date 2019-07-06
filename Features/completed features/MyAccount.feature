@@ -11,6 +11,6 @@ And click th sign in buton
 And I should be taken to my account 
 Then I should click on View or change my account information 
 And I should be taken to my account page
-#And the browser should close 
+And the browser should close 
 
  

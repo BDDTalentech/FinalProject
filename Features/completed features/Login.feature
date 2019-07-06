@@ -20,8 +20,8 @@ And I click on my account
 When I enter incorrect "<email address>" 
 And incorrect "<password>" 
 And click th sign in buton
-Then I should be taken to my account 
-#And the browser should close
+#Then I should be taken to my account 
+And the browser should close
 Examples:
 
 | email address         | password     | 

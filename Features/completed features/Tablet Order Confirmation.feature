@@ -21,4 +21,4 @@ Then I click Continue
 Then I click Credit or Debit Card 
 Then I click Continue
 And I should be taken to the Order Confirmation page
-#And the browser should close 
+And the browser should close 

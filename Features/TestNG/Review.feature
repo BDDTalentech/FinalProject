@@ -8,4 +8,4 @@ And I click the samsung galaxy tab
 #Then I should be taken to the Samsung Galaxy Tab product page
 When I click on the review button
 Then I should be taken to product review
-#And the browser should close
+And the browser should close

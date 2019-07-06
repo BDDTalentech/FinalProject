@@ -6,4 +6,4 @@ And I click on samsung galaxy tab
 #Then I should be taken to the samsung galaxy tab product page
 When I click on the add to cart button
 Then I should be taken to what's in my cart page
-#And the browser should close
+And the browser should close

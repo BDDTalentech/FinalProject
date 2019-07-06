@@ -6,5 +6,5 @@ When I navigate demo.oscommerce.com
 And I click on my account
 And I click on Password Forgotten
 Then I should be able to enter my email address 
-#And the browser should close
+And the browser should close
   

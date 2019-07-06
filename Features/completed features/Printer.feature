@@ -12,5 +12,5 @@ Then I should be taken to my account
 Then I select the Hardware tab
 Then I select the Printers icon 
 Then I should see the printers avaliable  
-#And the browser should close 
+And the browser should close 
 

@@ -7,3 +7,4 @@ And I click on advanced search
 And I enter price from
 And I click search
 Then I should be taken to the products that meet the search criteria page
+And the browser should close
